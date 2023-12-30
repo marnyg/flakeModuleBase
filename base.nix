@@ -1,4 +1,5 @@
 { self, ... }: {
+  flake.flakeModule = self.flakeModules.default;
   flake.flakeModules.default = { config, pkgs, ... }:
     {
 
